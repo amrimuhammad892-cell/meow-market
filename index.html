@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meow Market</title>
+
+  <style>
+
+    body{
+      font-family: Arial;
+      background:#f5f5f5;
+      text-align:center;
+      margin:0;
+      padding:20px;
+    }
+
+    h1{
+      color:#333;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .form{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      margin-bottom:20px;
+      box-shadow:0 0 5px rgba(0,0,0,0.2);
+    }
+
+    input, textarea{
+      width:90%;
+      padding:10px;
+      margin:5px;
+      border-radius:5px;
+      border:1px solid #ccc;
+    }
+
+    button{
+      padding:10px 15px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+      color:white;
+    }
+
+    .btn-tambah{
+      background:green;
+    }
+
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:10px;
+      margin:10px;
+      width:220px;
+      display:inline-block;
+      box-shadow:0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .btn-hapus{
+      background:red;
+    }
+
+    .notif{
+      color:red;
+      font-size:12px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🐱 Meow Market</h1>
+  <p>Platform Jual Beli Kucing Online</p>
+
+  <div class="form">
+
+    <h2>Tambah Kucing</h2>
+
+    <input type="text" id="nama" placeholder="Nama Kucing">
+
+    <input type="number" id="umur" placeholder="Umur">
+
+    <input type="text" id="jenis" placeholder="Jenis Kucing">
+
+    <input type="text" id="alamat" placeholder="Alamat">
+
+    <input type="text" id="hp" placeholder="No HP">
+
+    <input type="number" id="harga" placeholder="Harga">
+
+    <textarea id="deskripsi" placeholder="Deskripsi"></textarea>
+
+    <br>
+
+    <button class="btn-tambah">
+      Tambah
+    </button>
+
+  </div>
+
+  <div id="listKucing">
+
+    <div class="card">
+
+      <h3>Kitty</h3>
+
+      <p>Umur: 2 Tahun</p>
+
+      <p>Jenis: Persia</p>
+
+      <p>💰 Rp 2.000.000</p>
+
+      <p>📍 Medan</p>
+
+      <p>📞 08123456789</p>
+
+      <p class="notif">
+        ⚠️ Jika sudah terjual, harap hapus iklan ini
+      </p>
+
+      <button class="btn-hapus">
+        Hapus Iklan
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
